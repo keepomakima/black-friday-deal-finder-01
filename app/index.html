@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DealHunt — Real Black Friday Deals, Checked Today</title>
+<meta name="description" content="54 real Black Friday deals from Amazon, Best Buy, Target and Walmart, each checked against its source on 27 Nov 2026, with honest verdicts and price comparisons.">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="main.js"></script>
+</head>
+<body data-page="home">
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Deal<span>Hunt</span></a>
+    <p class="tagline">Real Black Friday deals, checked today — not guesses.</p>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html" aria-current="page">All deals</a>
+      <a href="compare.html">Compare prices</a>
+      <a href="sources.html">How we check</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="page-head">
+    <h1>Black Friday deals worth your money</h1>
+    <p>Every deal below was read from a named store or deals source today, 27 November 2026. Sale price, usual price, discount and the evidence behind the verdict are shown on each card — so you can tell a real price cut from a routine sale.</p>
+  </div>
+
+  <ul class="stats" id="stats" aria-label="Deal summary"></ul>
+
+  <h2 class="section-title">Best deals right now</h2>
+  <p class="section-sub">The six biggest record-low prices on the board — new lows with the deepest cuts.</p>
+  <div class="hero-grid" id="hero"></div>
+
+  <section class="finder" aria-label="Find a deal">
+    <div class="finder-row">
+      <div class="field grow">
+        <label for="q">Search</label>
+        <input type="search" id="q" placeholder="Try “AirPods”, “TV”, “vacuum”…">
+      </div>
+      <div class="field">
+        <label for="category">Category</label>
+        <select id="category"></select>
+      </div>
+      <div class="field">
+        <label for="store">Store</label>
+        <select id="store"></select>
+      </div>
+      <div class="field">
+        <label for="minDiscount">Min. discount</label>
+        <select id="minDiscount">
+          <option value="0">Any discount</option>
+          <option value="30">30% off or more</option>
+          <option value="40">40% off or more</option>
+          <option value="50">50% off or more</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="sort">Sort by</label>
+        <select id="sort">
+          <option value="discount">Biggest discount</option>
+          <option value="save">Biggest saving</option>
+          <option value="price">Lowest price</option>
+          <option value="verdict">Best verdict first</option>
+        </select>
+      </div>
+    </div>
+    <p class="result-count" id="resultCount" aria-live="polite"></p>
+  </section>
+
+  <main>
+    <div class="deal-grid" id="grid"></div>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>DealHunt — prices checked 27 Nov 2026. Prices can change; the store page is the final word.</span>
+    <span><a href="sources.html">How we check every deal</a></span>
+    <span><a href="compare.html">Compare the same product across stores</a></span>
+  </div>
+</footer>
+</body>
+</html>
