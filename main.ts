@@ -4,7 +4,7 @@
 // stylesheet, and data.js holding the 54 checked deals. Nothing is built and
 // nothing is fetched at run time. This program hands the entry in: it copies
 // app/ and screenshots/ into the output directory and writes
-// output/dossier.json, the summary the judge reads, using the vendored
+// output/dossier.json, the summary the scoring pass reads, using the vendored
 // make.fun library in vendor/ (left exactly as the kit shipped it — the
 // scorer requires dossier.json to be byte for byte what its own copy writes).
 //
